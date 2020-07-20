@@ -12,11 +12,11 @@
 ?>
 <?php echo $title;?>
 <div style='text-align:center'>
-<form action='register' method='post'>
-		<p><?php echo html::submitButton($lang->register)?></p>
+<form method='post'>
+		<p><?php echo html::a($this->createLink('index', 'register',""), $lang->register)?></p>
 		<h1><?php echo $lang->board?></h1>
 		<p><?php echo $lang->account . html::input('account')?></p>
 		<p><?php echo $lang->password . html::input('password')?></p>
-		<p><?php echo html::submitButton($this->lang->login,"")?></p>
+		<p><?php echo html::submitButton($this->lang->login)?></p>
 </form>
 </div>

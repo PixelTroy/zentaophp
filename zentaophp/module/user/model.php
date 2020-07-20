@@ -3,11 +3,9 @@ class userModel extends model
 {
 	public function create()
 	{
- 		$this->dao->insert('users')
- 		    ->set('account')->eq($this->post->account)
- 			->set('password')->eq($this->post->password)
- 			->exec();
- 		
+			$user = $_POST;
+			$this->dao->insert('users')->data($user)->exec();
+			if(dao::isError()) die(dao::getError());
 
 	}
 }

@@ -37,7 +37,9 @@ class index extends control
 		public function register()
 		{
 				$this->loadModel(user);
-				$this->user->create();
+				
+				$addUser = $this->user->create();
+				a($addUser);
 				$this->display();
 		}
 

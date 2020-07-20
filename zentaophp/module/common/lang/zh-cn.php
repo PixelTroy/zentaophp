@@ -22,6 +22,7 @@ $lang->password  = '密码';
 $lang->register  = '注册';
 $lang->login     = '登录';
 $lang->board     = '留言板';
+$lang->password1 = '请确认密码';
 /* The menu items. */
 $lang->menu = new stdclass();
 $lang->menu->index = '首页';
